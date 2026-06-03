@@ -1,0 +1,17 @@
+name: Peter Steinberger
+company: OpenClaw
+acquirer: OpenAI
+date: 2026-02-15
+blurb: >-
+  Viral open-source personal AI agent (~198k GitHub stars) that runs over chat
+  apps. After a bidding war with Meta, OpenAI acqui-hired its solo creator; the
+  project stays open-source. Terms undisclosed.
+ai_tools:
+  - AI agents
+links:
+  x: https://x.com/steipete
+sources:
+  - label: Bloomberg
+    url: https://www.bloomberg.com/news/articles/2026-02-15/openai-hires-openclaw-ai-agent-developer-peter-steinberg
+  - label: Computerworld
+    url: https://www.computerworld.com/article/4132725/openai-hires-openclaw-founder-as-ai-agent-race-intensifies.html
