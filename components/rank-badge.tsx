@@ -1,17 +1,11 @@
-import { cn } from "@/lib/utils";
-
-/** Medal for the top 3, plain "#n" otherwise. */
+/** Plain numeric rank: #1, #2, … */
 export function RankBadge({ rank }: { rank: number }) {
-  const medal = rank === 1 ? "🥇" : rank === 2 ? "🥈" : rank === 3 ? "🥉" : null;
   return (
     <span
-      className={cn(
-        "inline-flex items-center justify-center font-mono tabular-nums",
-        medal ? "text-xl" : "text-muted-foreground text-sm",
-      )}
+      className="text-muted-foreground inline-flex items-center justify-center font-mono text-sm tabular-nums"
       aria-label={`rank ${rank}`}
     >
-      {medal ?? `#${rank}`}
+      #{rank}
     </span>
   );
 }

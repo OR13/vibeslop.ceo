@@ -46,7 +46,7 @@ export default function Home() {
       <div className="grid gap-12 lg:grid-cols-2 lg:gap-10">
         <section id="exits" className="space-y-5">
           <header className="space-y-1">
-            <h2 className="text-xl font-semibold tracking-tight">🤖 Exits</h2>
+            <h2 className="text-xl font-semibold tracking-tight">Exits</h2>
             <p className="text-muted-foreground text-sm">
               Solo-owned, bootstrapped, AI-built companies that sold — ranked by
               exit value.
@@ -61,7 +61,7 @@ export default function Home() {
 
         <section id="layoffs" className="space-y-5">
           <header className="space-y-1">
-            <h2 className="text-xl font-semibold tracking-tight">🪓 Layoffs</h2>
+            <h2 className="text-xl font-semibold tracking-tight">Layoffs</h2>
             <p className="text-muted-foreground text-sm">
               CEOs who cut staff and named AI as the reason — ranked by headcount
               lost, each backed by a public source.
