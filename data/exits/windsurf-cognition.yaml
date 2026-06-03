@@ -1,0 +1,18 @@
+name: Varun Mohan
+company: Windsurf
+acquirer: Cognition
+date: 2025-07-14
+blurb: >-
+  AI coding IDE. After a ~$3B OpenAI deal collapsed and Google paid $2.4B to
+  hire its CEO and top researchers, Cognition (maker of the Devin AI agent)
+  acquired the remaining company — product, brand and team — for undisclosed
+  terms.
+ai_tools:
+  - AI coding agents
+links:
+  x: https://x.com/_mohansolo
+sources:
+  - label: CNBC
+    url: https://www.cnbc.com/2025/07/14/cognition-to-buy-ai-startup-windsurf-days-after-google-poached-ceo.html
+  - label: TechCrunch
+    url: https://techcrunch.com/2025/07/14/cognition-maker-of-the-ai-coding-agent-devin-acquires-windsurf/

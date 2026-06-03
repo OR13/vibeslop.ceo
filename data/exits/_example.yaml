@@ -1,26 +1,24 @@
 # Template for an Exit Club entry. Files starting with "_" are ignored by the
-# build — copy this to e.g. `jane-builder.yaml` and fill it in.
+# build — copy this to e.g. `acme.yaml` and fill it in.
 #
-# Everything in data/exits/ is, by curation, a solo-OWNED, bootstrapped,
-# AI-built company that sold: one founder, no co-founders, no outside funding,
-# product built/run on AI. The file's presence here is that claim — there are
-# no boolean flags restating it. Only add records that meet the bar.
+# This board is companies whose PRODUCT IS BUILT MOSTLY WITH AI — vibe-coding,
+# AI app builders, AI coding tools — that were ACQUIRED. No solo-founder
+# requirement: teams, co-founders and outside funding are all fine. The file's
+# presence in data/exits/ is the claim; only add records that fit.
 #
-# Boards are scoped to calendar years 2025 and 2026 (by `date`); entries dated
-# outside that window won't appear.
+# Scoped to calendar years 2025 and 2026 (by `date`); entries dated outside
+# that window won't appear.
 
-name: Jane Builder
-company: Acme
-exit_amount_usd: 3000000         # integer USD; the board ranks by this
-acquirer: BigCo                  # optional
-date: 2026-09-01                 # YYYY-MM-DD (must be in 2025 or 2026 to show)
-blurb: One sentence — solo-owned, bootstrapped, built on AI, then sold.
-ai_tools:                        # optional: what they used instead of staff
-  - Claude
-  - Cursor
-links:                           # all optional
+name: Jane Builder              # person/founder credited
+company: Acme                   # what was acquired
+exit_amount_usd: 3000000        # OPTIONAL integer USD; omit if undisclosed
+acquirer: BigCo                 # optional
+date: 2026-09-01                # YYYY-MM-DD (must be 2025 or 2026 to show)
+blurb: One sentence — what the product is, that it's AI-built, and the deal.
+ai_tools:                       # optional
+  - AI coding agents
+links:                          # all optional
   x: https://x.com/janebuilder
-  site: https://acme.example
-sources:                         # optional but encouraged: labeled URLs
-  - label: Acquire.com case study
-    url: https://acquire.com/...
+sources:                        # optional but encouraged: labeled URLs
+  - label: TechCrunch
+    url: https://techcrunch.com/...

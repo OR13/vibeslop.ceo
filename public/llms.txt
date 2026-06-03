@@ -12,14 +12,16 @@ public source (news report, podcast, or filing).
 
 ## Boards
 
-- [The Exit Club](https://vibeslop.ceo/#exits): solo-owned, bootstrapped,
-  AI-built companies that sold, ranked by exit value.
+- [The Exit Club](https://vibeslop.ceo/#exits): companies whose product is
+  built mostly with AI (vibe-coding, AI app builders, AI coding tools) that were
+  acquired, ranked by deal value.
 - [The Layoff Board](https://vibeslop.ceo/#layoffs): CEOs who cut staff citing
   AI, ranked by headcount lost, each backed by a public source.
 
 ## Current entries
 
-- Exit Club — 2025: Maor Shlomo / Base44, sold to Wix for $80M.
+- Exit Club — 2025: Maor Shlomo / Base44 (sold to Wix, $80M); Windsurf
+  (acquired by Cognition, undisclosed).
 - Layoff Board — 2025: Marc Benioff / Salesforce, ~4,000 support roles cut.
 - Layoff Board — 2026: Jack Dorsey / Block, ~4,000 cut (~40% of staff).
 

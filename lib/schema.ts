@@ -19,20 +19,19 @@ const SocialLinks = z
   .optional();
 
 /**
- * The Exit Club — solo-OWNED, bootstrapped, AI-built companies that sold for a
- * multi-million exit: one founder, no co-founders, no outside funding, the
- * product built/run on AI. (Hiring a small team late is allowed; the defining
- * traits are sole ownership + bootstrapped + AI-first.)
+ * The Exit Club — companies whose product is built mostly with AI (vibe-coding,
+ * AI app builders, AI coding tools) that were acquired. No solo-founder
+ * requirement; teams, co-founders and outside funding are all fine. `name` is
+ * the person/founder credited; `company` is what was acquired.
  *
- * The category is defined by the directory: every file in data/exits/ IS such a
- * company. There is no per-record boolean asserting that — curation is the
- * enforcement. These are just the descriptive fields the board renders.
- * `ai_tools` optionally lists the AI the product was built/run on.
+ * `exit_amount_usd` is optional: many AI acquisitions don't disclose terms, so
+ * when it's absent the board shows "undisclosed" and ranks the entry below
+ * those with a known value.
  */
 export const ExitSchema = z.object({
   name: z.string().min(1),
   company: z.string().min(1),
-  exit_amount_usd: z.number().int().positive(),
+  exit_amount_usd: z.number().int().positive().optional(),
   acquirer: z.string().min(1).optional(),
   date: z.string().regex(/^\d{4}-\d{2}-\d{2}$/, "date must be YYYY-MM-DD"),
   blurb: z.string().min(1),

@@ -3,9 +3,9 @@
 Two leaderboards for the AI-and-labor era, covering **calendar years 2025 and
 2026** (the latest year is the default "current" board):
 
-- **🤖 The Exit Club** — **solo-owned, bootstrapped, AI-built** companies that
-  sold for a multi-million exit (one founder, no outside funding, product built
-  on AI). Ranked by exit value.
+- **🤖 The Exit Club** — companies whose **product is built mostly with AI**
+  (vibe-coding, AI app builders, AI coding tools) that were **acquired**. Ranked
+  by deal value (undisclosed deals rank last).
 - **🪓 The Layoff Board** — CEOs who cut staff and **cited AI** as the reason.
   Ranked by headcount lost. Every entry links to a public source.
 
@@ -26,8 +26,8 @@ crawling, indexing, and training are all permitted (see `robots.txt`,
 Each entry is one YAML file. **Which directory it lives in is the claim** —
 there are no flags restating it:
 
-- `data/exits/<slug>.yaml` → a solo-owned, bootstrapped, AI-built company that
-  sold.
+- `data/exits/<slug>.yaml` → an AI-built company (product built mostly with AI)
+  that was acquired.
 - `data/layoffs/<slug>.yaml` → a CEO who laid off staff citing AI.
 
 Copy the `_example.yaml` in either directory and fill it in. Files starting
