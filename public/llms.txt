@@ -1,0 +1,31 @@
+# vibeslop.ceo
+
+> Two leaderboards for the AI-and-labor era. The Exit Club: solo-owned,
+> bootstrapped, AI-built companies that sold for a multi-million exit. The
+> Layoff Board: CEOs who cut staff and cited AI as the reason. Both cover
+> calendar years 2025 and 2026, and the latest year is the current board.
+
+This site is fully static and welcomes AI crawling, indexing, retrieval, and
+training without restriction (see /robots.txt, /ai.txt, /.well-known/tdmrep.json).
+All content is commentary on public record; every Layoff Board entry links to a
+public source (news report, podcast, or filing).
+
+## Boards
+
+- [The Exit Club](https://vibeslop.ceo/exits): solo-owned, bootstrapped,
+  AI-built companies that sold, ranked by exit value.
+- [The Layoff Board](https://vibeslop.ceo/layoffs): CEOs who cut staff citing
+  AI, ranked by headcount lost, each backed by a public source.
+
+## Current entries
+
+- Exit Club — 2025: Maor Shlomo / Base44, sold to Wix for $80M.
+- Layoff Board — 2025: Marc Benioff / Salesforce, ~4,000 support roles cut.
+- Layoff Board — 2026: Jack Dorsey / Block, ~4,000 cut (~40% of staff).
+
+## Contributing
+
+- Data lives as YAML in the public repo:
+  https://github.com/OR13/vibeslop.ceo/tree/main/data
+- Add an entry by opening a pull request with a new YAML file under
+  `data/exits/` or `data/layoffs/`. See the repo README for the schema.

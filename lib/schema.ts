@@ -19,13 +19,15 @@ const SocialLinks = z
   .optional();
 
 /**
- * The Exit Club — solo founders who built and sold a company without ever
- * hiring anyone, using only AI.
+ * The Exit Club — solo-OWNED, bootstrapped, AI-built companies that sold for a
+ * multi-million exit: one founder, no co-founders, no outside funding, the
+ * product built/run on AI. (Hiring a small team late is allowed; the defining
+ * traits are sole ownership + bootstrapped + AI-first.)
  *
  * The category is defined by the directory: every file in data/exits/ IS such a
- * founder. There is no per-record boolean asserting that — curation is the
+ * company. There is no per-record boolean asserting that — curation is the
  * enforcement. These are just the descriptive fields the board renders.
- * `ai_tools` optionally lists what they used instead of staff.
+ * `ai_tools` optionally lists the AI the product was built/run on.
  */
 export const ExitSchema = z.object({
   name: z.string().min(1),
@@ -57,5 +59,9 @@ export const LayoffSchema = z.object({
 });
 
 export type Source = z.infer<typeof SourceSchema>;
-export type Exit = z.infer<typeof ExitSchema> & { id: string; rank: number };
-export type Layoff = z.infer<typeof LayoffSchema> & { id: string; rank: number };
+export type Exit = z.infer<typeof ExitSchema> & { id: string; rank: number; year: number };
+export type Layoff = z.infer<typeof LayoffSchema> & { id: string; rank: number; year: number };
+
+/** Calendar years the boards cover, newest first. The first entry is "current". */
+export const BOARD_YEARS = [2026, 2025] as const;
+export type BoardYear = (typeof BOARD_YEARS)[number];

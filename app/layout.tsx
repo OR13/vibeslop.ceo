@@ -14,14 +14,23 @@ export const metadata: Metadata = {
   },
   description:
     "Two leaderboards for the AI era: solo founders who built and sold companies without hiring anyone, and CEOs who cut staff citing AI.",
+  alternates: { canonical: "/" },
   openGraph: {
     title: "vibeslop.ceo",
     description:
-      "Solo founders who sold without hiring, and CEOs who laid off citing AI.",
+      "Solo-owned, AI-built companies that sold, and CEOs who laid off citing AI.",
     url: "https://vibeslop.ceo",
     siteName: "vibeslop.ceo",
+    type: "website",
+    images: [{ url: "/og.png", width: 1200, height: 630, alt: "vibeslop.ceo — the AI labor leaderboards" }],
   },
-  twitter: { card: "summary_large_image" },
+  twitter: {
+    card: "summary_large_image",
+    title: "vibeslop.ceo",
+    description:
+      "Solo-owned, AI-built companies that sold, and CEOs who laid off citing AI.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({

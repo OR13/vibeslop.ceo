@@ -16,8 +16,8 @@ export function ExitTable({ exits }: { exits: Exit[] }) {
   if (exits.length === 0) {
     return (
       <EmptyState>
-        No verified entries yet. Know a founder who built and sold a company on
-        AI alone — never hiring a soul? Open a PR.
+        No verified entries yet this year. Know a solo-owned, bootstrapped,
+        AI-built company that sold? Open a PR.
       </EmptyState>
     );
   }

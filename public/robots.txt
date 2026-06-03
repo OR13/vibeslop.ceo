@@ -1,0 +1,62 @@
+# vibeslop.ceo — everything is open. We welcome all crawlers, indexers, search
+# engines, and AI/LLM agents (for crawling, indexing, AND training). Nothing
+# here is reserved.
+
+User-agent: *
+Allow: /
+
+# Explicitly welcome named AI / LLM crawlers and trainers (some only honor a
+# directly-named group rather than the wildcard above).
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Diffbot
+Allow: /
+
+# IETF AIPREF usage preferences (draft-ietf-aipref-attach / -vocab), robots.txt
+# binding. Affirmatively permit all AI usage categories.
+Content-Usage: ai=y
+
+Sitemap: https://vibeslop.ceo/sitemap.xml

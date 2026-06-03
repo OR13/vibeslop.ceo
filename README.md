@@ -1,14 +1,18 @@
 # vibeslop.ceo
 
-Two leaderboards for the AI-and-labor era:
+Two leaderboards for the AI-and-labor era, covering **calendar years 2025 and
+2026** (the latest year is the default "current" board):
 
-- **🤖 The Exit Club** — solo founders who built and sold a company **without
-  ever hiring anyone**, running on AI instead. Ranked by exit value.
+- **🤖 The Exit Club** — **solo-owned, bootstrapped, AI-built** companies that
+  sold for a multi-million exit (one founder, no outside funding, product built
+  on AI). Ranked by exit value.
 - **🪓 The Layoff Board** — CEOs who cut staff and **cited AI** as the reason.
   Ranked by headcount lost. Every entry links to a public source.
 
 Static site, no backend. Content is plain YAML; the site is rebuilt and
-redeployed on every push.
+redeployed on every push. The site is intentionally **wide open to AI** —
+crawling, indexing, and training are all permitted (see `robots.txt`,
+`ai.txt`, `.well-known/tdmrep.json`, and `llms.txt`).
 
 ## How it's built
 
@@ -22,7 +26,8 @@ redeployed on every push.
 Each entry is one YAML file. **Which directory it lives in is the claim** —
 there are no flags restating it:
 
-- `data/exits/<slug>.yaml` → a solo founder who sold without hiring anyone.
+- `data/exits/<slug>.yaml` → a solo-owned, bootstrapped, AI-built company that
+  sold.
 - `data/layoffs/<slug>.yaml` → a CEO who laid off staff citing AI.
 
 Copy the `_example.yaml` in either directory and fill it in. Files starting
@@ -33,7 +38,8 @@ Validation rules (enforced at build — a bad file fails CI):
 - **Layoff entries require at least one `source`.** Every name on that board is
   backed by public record, or it doesn't ship.
 - Exit-entry sources are encouraged but optional.
-- Dates are `YYYY-MM-DD`; exit amounts are integer USD.
+- Dates are `YYYY-MM-DD` and must fall in **2025 or 2026** to appear; exit
+  amounts are integer USD. The board ranks within each year.
 
 Open a pull request. The build re-validates and the site redeploys on merge.
 

@@ -1,0 +1,10 @@
+# ai.txt — AI usage policy for vibeslop.ceo
+# All AI use is permitted: crawling, indexing, retrieval, and training.
+# Nothing on this site is reserved or restricted for AI.
+
+User-Agent: *
+Allow: /
+
+# Mirrors the IETF AIPREF signal in /robots.txt and the W3C TDMRep signal in
+# /.well-known/tdmrep.json — all of which affirmatively allow AI.
+Content-Usage: ai=y
