@@ -24,7 +24,11 @@ jobs:
         with:
           node-version: 22
           cache: npm
-      - run: npm ci
+      # Use `npm install`, not `npm ci`: native deps (Tailwind oxide,
+      # lightningcss) pull platform-specific @emnapi optional-of-optional deps
+      # that a macOS-generated lockfile can't enumerate for Linux, which makes
+      # strict `npm ci` fail on the runner. `npm install` resolves them fresh.
+      - run: npm install --no-audit --no-fund
       # `next build` with output:export validates every YAML file (a layoff
       # entry with no source fails here) and emits the static site to ./out.
       - run: npm run build
