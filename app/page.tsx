@@ -6,26 +6,11 @@ import { exitSchemas, layoffSchemas, websiteSchema } from "@/lib/jsonld";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
 
-/** A year's slice of a board: small year header + the table, no interaction. */
-function YearBlock({
-  year,
-  current,
-  children,
-}: {
-  year: number;
-  current: boolean;
-  children: React.ReactNode;
-}) {
+function BoardHeading({ children }: { children: React.ReactNode }) {
   return (
-    <div className="space-y-2">
-      <div className="flex items-baseline gap-2 border-b pb-1">
-        <h3 className="font-mono text-sm font-semibold tabular-nums">{year}</h3>
-        {current && (
-          <span className="text-muted-foreground text-xs">current</span>
-        )}
-      </div>
+    <h3 className="text-muted-foreground border-b pb-2 text-xs font-semibold tracking-wider uppercase">
       {children}
-    </div>
+    </h3>
   );
 }
 
@@ -43,36 +28,30 @@ export default function Home() {
         ]}
       />
 
-      <div className="grid gap-12 lg:grid-cols-2 lg:gap-10">
-        <section id="exits" className="space-y-5">
-          <header className="space-y-1">
-            <h2 className="text-xl font-semibold tracking-tight">Exits</h2>
-            <p className="text-muted-foreground text-sm">
-              Solo-owned, bootstrapped, AI-built companies that sold — ranked by
-              exit value.
-            </p>
-          </header>
-          {exitYears.map(({ year, exits }, i) => (
-            <YearBlock key={year} year={year} current={i === 0}>
-              <ExitList exits={exits} />
-            </YearBlock>
-          ))}
-        </section>
+      <div className="space-y-16">
+        {exitYears.map(({ year, exits }, i) => (
+          <section key={year} className="space-y-6">
+            <div className="text-center">
+              <h2 className="font-mono text-3xl font-bold tracking-tight tabular-nums">
+                {year}
+              </h2>
+              {i === 0 && (
+                <p className="text-muted-foreground mt-1 text-xs">current</p>
+              )}
+            </div>
 
-        <section id="layoffs" className="space-y-5">
-          <header className="space-y-1">
-            <h2 className="text-xl font-semibold tracking-tight">Layoffs</h2>
-            <p className="text-muted-foreground text-sm">
-              CEOs who cut staff and named AI as the reason — ranked by headcount
-              lost, each backed by a public source.
-            </p>
-          </header>
-          {layoffYears.map(({ year, layoffs }, i) => (
-            <YearBlock key={year} year={year} current={i === 0}>
-              <LayoffList layoffs={layoffs} />
-            </YearBlock>
-          ))}
-        </section>
+            <div className="grid gap-x-10 gap-y-8 md:grid-cols-2">
+              <div className="space-y-4">
+                <BoardHeading>Exits</BoardHeading>
+                <ExitList exits={exits} />
+              </div>
+              <div className="space-y-4">
+                <BoardHeading>Layoffs</BoardHeading>
+                <LayoffList layoffs={layoffYears[i].layoffs} />
+              </div>
+            </div>
+          </section>
+        ))}
       </div>
     </>
   );
