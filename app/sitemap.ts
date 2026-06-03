@@ -6,8 +6,8 @@ export const dynamic = "force-static";
 const BASE = "https://vibeslop.ceo";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  // Single-page site; boards are hash fragments (#exits / #layoffs), which are
-  // not separate indexable URLs, so the sitemap lists only the root.
+  // Single-page site (both boards shown at once); #exits / #layoffs are just
+  // scroll anchors, not separate indexable URLs, so list only the root.
   return [
     {
       url: `${BASE}/`,
