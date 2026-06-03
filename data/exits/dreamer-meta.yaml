@@ -1,0 +1,14 @@
+name: David Singleton
+company: Dreamer
+acquirer: Meta
+date: 2026-03-23
+blurb: >-
+  Agentic-AI startup (co-founders David Singleton, ex-Stripe CTO; Hugo Barra;
+  Nicholas Jitkoff). Meta acqui-hired the entire founding team into
+  Superintelligence Labs just ~5 weeks after its public beta — VC backers got a
+  premium on $56M raised; terms otherwise undisclosed.
+ai_tools:
+  - agentic AI
+sources:
+  - label: SiliconANGLE
+    url: https://siliconangle.com/2026/03/23/meta-acqui-hires-co-founders-agentic-ai-startup-dreamer/
