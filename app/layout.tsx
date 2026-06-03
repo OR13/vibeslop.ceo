@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s — vibeslop.ceo",
   },
   description:
-    "Two leaderboards for the AI era: solo founders who built and sold companies without hiring anyone, and CEOs who cut staff citing AI.",
+    "Two leaderboards for the AI era: solo-owned, bootstrapped, AI-built companies that sold, and CEOs who cut staff citing AI. 2025 and 2026.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "vibeslop.ceo",
@@ -43,36 +43,30 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <header className="border-b">
-          <nav className="mx-auto flex max-w-3xl items-center justify-between px-4 py-4">
-            <Link href="/" className="font-mono font-bold tracking-tight">
-              vibeslop<span className="text-muted-foreground">.ceo</span>
+          <div className="mx-auto flex max-w-5xl items-baseline justify-between gap-4 px-4 py-4">
+            <Link href="/" className="flex items-baseline gap-2.5">
+              <span className="font-mono text-lg font-bold tracking-tight">
+                vibeslop<span className="text-muted-foreground">.ceo</span>
+              </span>
+              <span className="text-muted-foreground text-sm">
+                Exits &amp; Layoffs
+              </span>
             </Link>
-            <div className="flex gap-4 text-sm">
-              <a href="#exits" className="hover:underline underline-offset-4">
-                Exit Club
-              </a>
-              <a href="#layoffs" className="hover:underline underline-offset-4">
-                Layoff Board
-              </a>
-            </div>
-          </nav>
+            <a
+              href="https://github.com/OR13/vibeslop.ceo"
+              className="text-muted-foreground shrink-0 text-sm hover:text-foreground"
+            >
+              GitHub
+            </a>
+          </div>
         </header>
 
-        <main className="mx-auto w-full max-w-3xl flex-1 px-4 py-8">
+        <main className="mx-auto w-full max-w-5xl flex-1 px-4 py-8">
           {children}
         </main>
 
         <footer className="text-muted-foreground border-t py-6 text-center text-xs">
-          <p>
-            Commentary on public record. Every claim links to its source.{" "}
-            <a
-              href="https://github.com/OR13/vibeslop.ceo"
-              className="underline underline-offset-2 hover:text-foreground"
-            >
-              Contribute on GitHub
-            </a>
-            .
-          </p>
+          Commentary on public record — every claim links to its source.
         </footer>
       </body>
     </html>

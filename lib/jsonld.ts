@@ -35,7 +35,7 @@ export function exitSchemas(byYear: { year: number; exits: Exit[] }[]) {
     .filter((y) => y.exits.length > 0)
     .map((y) =>
       itemList(
-        `The Exit Club — ${y.year}`,
+        `Exits — ${y.year}`,
         y.exits.map((e) => ({
           name: `${e.name} — ${e.company} (${formatMoney(e.exit_amount_usd)})`,
         })),
@@ -49,7 +49,7 @@ export function layoffSchemas(byYear: { year: number; layoffs: Layoff[] }[]) {
     .filter((y) => y.layoffs.length > 0)
     .map((y) =>
       itemList(
-        `The Layoff Board — ${y.year}`,
+        `Layoffs — ${y.year}`,
         y.layoffs.map((l) => ({
           name: `${l.ceo_name} — ${l.company}`,
         })),
