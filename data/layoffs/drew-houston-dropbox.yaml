@@ -1,0 +1,18 @@
+ceo_name: Drew Houston
+company: Dropbox
+layoff_count: 500
+percent: 16
+date: 2023-04-27
+ai_quote: >-
+  We've decided to reduce the size of our team by approximately 16% … the AI
+  era of computing has finally arrived.
+blurb: >-
+  Cut 16% of staff (~500 roles), with the CEO's memo and SEC filing citing
+  slowing growth and the arrival of the AI era.
+links:
+  site: https://blog.dropbox.com/topics/company/a-message-from-drew
+sources:
+  - label: TechCrunch
+    url: https://techcrunch.com/2023/04/27/dropbox-lays-off-500-employees-16-of-staff-ceo-says-due-to-slowing-growth-and-the-era-of-ai/
+  - label: Dropbox blog — A message from Drew
+    url: https://blog.dropbox.com/topics/company/a-message-from-drew

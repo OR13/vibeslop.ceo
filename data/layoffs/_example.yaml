@@ -1,0 +1,19 @@
+# Template for a Layoff Board entry. Files starting with "_" are ignored by the
+# build — copy this to e.g. `john-exec.yaml` and fill it in.
+#
+# `sources` is REQUIRED (at least one). A layoff entry with no source FAILS the
+# build on purpose: every name on this board is backed by public record.
+
+ceo_name: John Exec
+company: MegaCorp
+layoff_count: 1200               # optional integer; the board ranks by this
+percent: 15                      # optional, 0–100
+date: 2025-03-01                 # YYYY-MM-DD
+ai_quote: >-
+  The verbatim public statement where AI was tied to the cuts.
+blurb: One sentence of context.
+links:                           # all optional
+  x: https://x.com/johnexec
+sources:                         # REQUIRED — at least one labeled URL
+  - label: Reuters
+    url: https://www.reuters.com/...
