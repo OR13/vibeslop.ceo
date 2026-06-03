@@ -39,7 +39,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`dark ${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <header className="border-b">
@@ -48,12 +48,12 @@ export default function RootLayout({
               vibeslop<span className="text-muted-foreground">.ceo</span>
             </Link>
             <div className="flex gap-4 text-sm">
-              <Link href="/exits" className="hover:underline underline-offset-4">
+              <a href="#exits" className="hover:underline underline-offset-4">
                 Exit Club
-              </Link>
-              <Link href="/layoffs" className="hover:underline underline-offset-4">
+              </a>
+              <a href="#layoffs" className="hover:underline underline-offset-4">
                 Layoff Board
-              </Link>
+              </a>
             </div>
           </nav>
         </header>

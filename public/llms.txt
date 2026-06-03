@@ -12,9 +12,9 @@ public source (news report, podcast, or filing).
 
 ## Boards
 
-- [The Exit Club](https://vibeslop.ceo/exits): solo-owned, bootstrapped,
+- [The Exit Club](https://vibeslop.ceo/#exits): solo-owned, bootstrapped,
   AI-built companies that sold, ranked by exit value.
-- [The Layoff Board](https://vibeslop.ceo/layoffs): CEOs who cut staff citing
+- [The Layoff Board](https://vibeslop.ceo/#layoffs): CEOs who cut staff citing
   AI, ranked by headcount lost, each backed by a public source.
 
 ## Current entries
