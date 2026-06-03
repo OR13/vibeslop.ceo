@@ -60,7 +60,13 @@ export function getExits(year: BoardYear): Exit[] {
   return ranked(
     loadDir("exits", ExitSchema)
       .filter((e) => e.year === year)
-      .sort((a, b) => b.exit_amount_usd - a.exit_amount_usd),
+      // Disclosed deals first (by value desc), then undisclosed (by date desc).
+      .sort((a, b) => {
+        const av = a.exit_amount_usd ?? -1;
+        const bv = b.exit_amount_usd ?? -1;
+        if (av !== bv) return bv - av;
+        return b.date.localeCompare(a.date);
+      }),
   );
 }
 

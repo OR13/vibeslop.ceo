@@ -71,7 +71,7 @@ export function ExitList({ exits }: { exits: Exit[] }) {
           rank={e.rank}
           title={e.name}
           subtitle={e.acquirer ? `${e.company} → ${e.acquirer}` : e.company}
-          metric={formatMoney(e.exit_amount_usd)}
+          metric={e.exit_amount_usd ? formatMoney(e.exit_amount_usd) : "undisclosed"}
           date={e.date}
         >
           <p className="text-sm break-words">{e.blurb}</p>

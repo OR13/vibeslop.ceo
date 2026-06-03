@@ -11,7 +11,7 @@ export function websiteSchema() {
     name: "vibeslop.ceo",
     url: BASE,
     description:
-      "Two leaderboards for the AI era: solo-owned, bootstrapped, AI-built companies that sold, and CEOs who cut staff citing AI.",
+      "Two leaderboards for the AI era: AI-built companies that were acquired, and CEOs who cut staff citing AI.",
   };
 }
 
@@ -37,7 +37,9 @@ export function exitSchemas(byYear: { year: number; exits: Exit[] }[]) {
       itemList(
         `Exits — ${y.year}`,
         y.exits.map((e) => ({
-          name: `${e.name} — ${e.company} (${formatMoney(e.exit_amount_usd)})`,
+          name: `${e.name} — ${e.company} (${
+            e.exit_amount_usd ? formatMoney(e.exit_amount_usd) : "undisclosed"
+          })`,
         })),
       ),
     );

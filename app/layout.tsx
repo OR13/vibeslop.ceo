@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s — vibeslop.ceo",
   },
   description:
-    "Two leaderboards for the AI era: solo-owned, bootstrapped, AI-built companies that sold, and CEOs who cut staff citing AI. 2025 and 2026.",
+    "Two leaderboards for the AI era: AI-built companies that were acquired, and CEOs who cut staff citing AI. 2025 and 2026.",
   alternates: { canonical: "/" },
   openGraph: {
     title: "vibeslop.ceo",
