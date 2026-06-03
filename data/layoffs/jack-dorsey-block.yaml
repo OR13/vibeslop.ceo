@@ -1,0 +1,20 @@
+ceo_name: Jack Dorsey
+company: Block
+layoff_count: 4000
+percent: 40
+date: 2026-02-26
+ai_quote: >-
+  A significantly smaller team, using the tools we're building, can do more and
+  do it better. And intelligence tool capabilities are compounding faster every
+  week.
+blurb: >-
+  Cut roughly 40% of staff (~4,000 people, 10,000 → under 6,000), telling
+  shareholders AI tooling — not business weakness — was the reason, and
+  predicting most companies would follow within a year.
+links:
+  x: https://x.com/jack
+sources:
+  - label: CNN Business
+    url: https://www.cnn.com/2026/02/26/business/block-layoffs-ai-jack-dorsey
+  - label: Fortune
+    url: https://fortune.com/2026/02/27/block-jack-dorsey-ceo-xyz-stock-square-4000-ai-layoffs/

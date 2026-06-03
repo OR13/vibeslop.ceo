@@ -1,0 +1,17 @@
+ceo_name: Marc Benioff
+company: Salesforce
+layoff_count: 4000
+percent: 5
+date: 2025-09-02
+ai_quote: >-
+  I've reduced it from 9,000 heads to about 5,000, because I need less heads.
+blurb: >-
+  Cut ~4,000 customer-support roles (support headcount 9,000 → 5,000),
+  attributing it to Salesforce's own AI agents handling the work.
+links:
+  x: https://x.com/benioff
+sources:
+  - label: CNBC
+    url: https://www.cnbc.com/2025/09/02/salesforce-ceo-confirms-4000-layoffs-because-i-need-less-heads-with-ai.html
+  - label: Fortune
+    url: https://fortune.com/2025/09/02/salesforce-ceo-billionaire-marc-benioff-ai-agents-jobs-layoffs-customer-service-sales/

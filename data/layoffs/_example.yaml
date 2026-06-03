@@ -3,6 +3,9 @@
 #
 # `sources` is REQUIRED (at least one). A layoff entry with no source FAILS the
 # build on purpose: every name on this board is backed by public record.
+#
+# Boards are scoped to calendar years 2025 and 2026 (by `date`); entries dated
+# outside that window won't appear.
 
 ceo_name: John Exec
 company: MegaCorp

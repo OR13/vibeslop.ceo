@@ -1,17 +1,20 @@
 # Template for an Exit Club entry. Files starting with "_" are ignored by the
 # build — copy this to e.g. `jane-builder.yaml` and fill it in.
 #
-# Everything in data/exits/ is, by curation, a solo founder who built and sold
-# a company WITHOUT ever hiring anyone, using only AI. The file's presence here
-# is that claim — there are no boolean flags restating it. Only add records that
-# actually meet the bar.
+# Everything in data/exits/ is, by curation, a solo-OWNED, bootstrapped,
+# AI-built company that sold: one founder, no co-founders, no outside funding,
+# product built/run on AI. The file's presence here is that claim — there are
+# no boolean flags restating it. Only add records that meet the bar.
+#
+# Boards are scoped to calendar years 2025 and 2026 (by `date`); entries dated
+# outside that window won't appear.
 
 name: Jane Builder
 company: Acme
 exit_amount_usd: 3000000         # integer USD; the board ranks by this
 acquirer: BigCo                  # optional
-date: 2025-09-01                 # YYYY-MM-DD
-blurb: One sentence — built and sold solo, no hires, ran on AI.
+date: 2026-09-01                 # YYYY-MM-DD (must be in 2025 or 2026 to show)
+blurb: One sentence — solo-owned, bootstrapped, built on AI, then sold.
 ai_tools:                        # optional: what they used instead of staff
   - Claude
   - Cursor
