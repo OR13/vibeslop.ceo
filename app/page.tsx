@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { ExitTable } from "@/components/exit-table";
-import { LayoffTable } from "@/components/layoff-table";
+import { ExitList, LayoffList } from "@/components/leaderboard";
 import { JsonLd } from "@/components/json-ld";
 import { getExitsByYear, getLayoffsByYear } from "@/lib/data";
 import { exitSchemas, layoffSchemas, websiteSchema } from "@/lib/jsonld";
@@ -55,7 +54,7 @@ export default function Home() {
           </header>
           {exitYears.map(({ year, exits }, i) => (
             <YearBlock key={year} year={year} current={i === 0}>
-              <ExitTable exits={exits} />
+              <ExitList exits={exits} />
             </YearBlock>
           ))}
         </section>
@@ -70,7 +69,7 @@ export default function Home() {
           </header>
           {layoffYears.map(({ year, layoffs }, i) => (
             <YearBlock key={year} year={year} current={i === 0}>
-              <LayoffTable layoffs={layoffs} />
+              <LayoffList layoffs={layoffs} />
             </YearBlock>
           ))}
         </section>
