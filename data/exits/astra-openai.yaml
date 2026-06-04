@@ -1,0 +1,19 @@
+name: Charlie Marsh
+company: Astral
+acquirer: OpenAI
+date: 2026-03-19
+blurb: >-
+  Astral, the company behind the fast Rust-based Python tools uv, Ruff, and ty
+  (hundreds of millions of downloads per month), agreed to join OpenAI's Codex
+  team. The team and its open source tooling move to OpenAI, which says it will
+  continue supporting the open source projects after the deal closes. Terms
+  undisclosed.
+ai_tools:
+  - AI coding agents (Codex)
+links:
+  x: https://x.com/charliermarsh
+sources:
+  - label: OpenAI
+    url: https://openai.com/index/openai-to-acquire-astral/
+  - label: Astral
+    url: https://astral.sh/blog/openai
